@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.time.LocalDateTime;
 import java.util.List;
 
 @RestController
@@ -31,7 +32,12 @@ public class EntryController {
 
     @DeleteMapping("{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void deleteEntry(@PathVariable long id){
+    public void deleteEntry(@PathVariable Long id){
         entryService.deleteEntry(id);
+    }
+    @PutMapping("{id}")
+    @ResponseStatus(HttpStatus.OK)
+    public void editEntry(@PathVariable Long id, LocalDateTime checkIn, LocalDateTime checkOut){
+        entryService.editEntry(id, checkIn, checkOut);
     }
 }
