@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Punchclock Client</title>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-        <script src="assets/js/script.js" type="application/javascript"></script>
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Punchclock Client</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
 
-    </body>
+</head>
+<body>
+<header>
+    <nav class="nav-hidden header-item">
+        <div class="nav-item">
+            <a class="nav-link" href="entries.html">
+                Entries
+            </a>
+        </div>
+    </nav>
+    <div id="login-btn-div" class="header-item">
+        <button id="login-btn">
+            Login/Sign-Up
+        </button>
+    </div>
+</header>
+<main>
+<div class="hidden-login" >
+    <form id="login-form">
+        <label for="username">Benutzername</label>
+        <input type="text" id="username" placeholder="Benutzername"/>
+        <label for="password">Passwort</label>
+        <input type="password" id="password" placeholder="Passwort"/>
+        <button id="loginsub" type="submit">Login</button>
+        <button id="signupsub" type="submit">Sign-Up</button>
+    </form>
+</div>
+</main>
+<footer>
+
+</footer>
+</body>
 </html>

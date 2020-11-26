@@ -1,13 +1,80 @@
-input {
-    display: block;
-    width: 20rem;
-    box-sizing: border-box;
+body{
+    margin: 0;
 }
 
-input[type='submit'], table {
-    margin-top: 1rem;
+a:hover, button:hover{
+    cursor: pointer;
 }
 
-table {
-    width: 40rem;
+a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    margin: 0;
+    width: 100%;
+    background-color: darkslateblue;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-item{
+    display: flex;
+}
+
+.nav-hidden{
+    display: inline-flex;
+    flex-direction: row;
+
+}
+
+.nav-item{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 25px;
+
+}
+.nav-link{
+    padding: 25px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#login-btn{
+    padding: 25px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#login-btn-div{
+    justify-self: center;
+    margin-right: -400px;
+    margin-left: 500px;
+
+}
+
+.hidden-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    animation: ease 5ms;
+
+}
+#login-form label, input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#login-form{
+    display: inline-flex;
+    flex-direction: column;
+    visibility: hidden;
+    background-color: dodgerblue;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
 }
